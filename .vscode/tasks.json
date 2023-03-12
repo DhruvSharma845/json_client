@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "/usr/local/bin/sshpass",
+            "args": [
+                "-p",
+                "root",
+                "ssh",
+                "-p",
+                "2233",
+                "root@localhost",
+                "/json_client/build-script.sh"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
